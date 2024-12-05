@@ -6,6 +6,51 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Created on : 21-08-2023, 13:31:34
     Author     : Usuario
 */
+
+.form-horizontal{
+    display:block;
+    width:50%;
+    margin:0 auto;
+}
+
+.carousel-indicators {
+  opacity: 1;
+}
+
+[data-bs-theme=dark] .carousel-dark .carousel-indicators [data-bs-target], [data-bs-theme=dark] .carousel .carousel-indicators [data-bs-target], .carousel-dark .carousel-indicators [data-bs-target], .carousel .carousel-indicators [data-bs-target] {
+  background-color: var(--bs-black);
+  opacity: 1;
+}
+[data-bs-theme=dark] .carousel-dark [data-bs-target].active, [data-bs-theme=dark] .carousel [data-bs-target].active, .carousel-dark [data-bs-target].active, .carousel [data-bs-target].active {
+  background-color: var(--bs-white);
+}
+[data-bs-theme=light] .carousel-dark [data-bs-target].active, [data-bs-theme=dark] .carousel [data-bs-target].active, .carousel-dark [data-bs-target].active, .carousel [data-bs-target].active {
+  background-color: var(--bs-white);
+}
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  
+}
+.carousel-control-prev-icon 
+{
+    width: 94px;
+    height: 94px;
+}
+    
+.carousel-control-next-icon
+{
+    width: 94px;
+    height: 94px;
+}
+[data-bs-theme="dark"] .carousel .carousel-control-prev-icon,
+[data-bs-theme="dark"] .carousel .carousel-control-next-icon,
+[data-bs-theme="dark"].carousel .carousel-control-prev-icon,
+[data-bs-theme="dark"].carousel .carousel-control-next-icon {
+  filter: none;
+}
+
 :root {
 --language:data-en;
 }
@@ -117,6 +162,20 @@ html {
    margin-left: 1040px;
   margin-top: 200px;
 } */
+/* .language{ */
+    
+/*     position: fixed; */
+/*     width: 80px; */
+/*     height: 80px;  */
+/*     line-height: 80px; */
+/*     bottom: 200px; */
+/*     right: 20px; */
+/*     border-radius: 50px; */
+/*     text-align: center; */
+/*     z-index: 100; */
+/*     margin-bottom: 110px; */
+   
+/* } */
 .language{
     
     position: fixed;
@@ -128,28 +187,27 @@ html {
     border-radius: 50px;
     text-align: center;
     z-index: 100;
-    margin-bottom: 110px;
    
 }
-.whatsapp{
+/* .whatsapp{ */
     
-    position: fixed;
-    width: 80px;
-    height: 80px; 
-    line-height: 80px;
-    bottom: 200px;
-    right: 20px;
-    border-radius: 50px;
-    text-align: center;
-    z-index: 100;
+/*     position: fixed; */
+/*     width: 80px; */
+/*     height: 80px;  */
+/*     line-height: 80px; */
+/*     bottom: 200px; */
+/*     right: 20px; */
+/*     border-radius: 50px; */
+/*     text-align: center; */
+/*     z-index: 100; */
    
-}
-/*Whatsapp*/
-.whatsapp:hover {
-    opacity: 0.7;
-    color: #0df053;
-    background: #fff;
-}
+/* } */
+/* /*Whatsapp*/ 
+/* .whatsapp:hover { */
+/*     opacity: 0.7; */
+/*     color: #0df053; */
+/*     background: #fff; */
+/* } */
  div#general {
 	background-color: yellow;
 	width: 960px;
@@ -335,20 +393,20 @@ div#derecha {
       }
 
       .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
+        --bd-violet-bg: gray;
         --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 
         --bs-btn-font-weight: 600;
         --bs-btn-color: var(--bs-white);
         --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-gray-bg);
         --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-hover-bg: gray;
+        --bs-btn-hover-border-color: gray;
+        --bs-btn-focus-shadow-rgb: var(--bd-gray-rgb);
         --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
+        --bs-btn-active-bg: gray;
+        --bs-btn-active-border-color: gray;
       }
       .bd-mode-toggle {
         z-index: 1500;
