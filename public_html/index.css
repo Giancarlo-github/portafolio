@@ -7,6 +7,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Author     : Usuario
 */
 
+.frame {
+  height: 160px; /*can be anything*/
+  width: 160px; /*can be anything*/
+  display: inline-block;
+  vertical-align: top; /*not required*/
+  border: 1px solid black; /*not required*/
+  position: relative;
+}
+
+
+
 .form-horizontal{
     display:block;
     width:50%;
@@ -31,12 +42,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  
 }
 .carousel-control-prev-icon 
 {
     width: 94px;
-    height: 94px;
+    height: 94px;   
 }
     
 .carousel-control-next-icon
