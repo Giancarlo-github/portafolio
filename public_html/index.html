@@ -22,6 +22,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
               crossorigin="anonymous" />
     </head>
     <body>
+         
+        <div class="header">
+    <h2>Scroll Progress Bar</h2>
+    <div class="progress-container">
+        <div class="progress-bar" id="proBar"></div>
+    </div>  
+</div>
+        
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="check2" viewBox="0 0 16 16">
         <path
@@ -112,6 +120,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
         window.onscroll = () => {
             add_btn_scrolltop()
+             pageScroll();
         }
 
         const add_btn_scrolltop = () => {
@@ -122,6 +131,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             }
         }
 
+function pageScroll() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("proBar").style.width = scrolled + "%";
+}
 
         function changelang() {
 
@@ -525,8 +540,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 </div>
 
         </div>
-
-
+        
         <div id="contacto">
 
             <p class="secciones-parrafo">

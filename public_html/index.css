@@ -17,8 +17,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
   position: relative;
 }
 
-
-
 .form-horizontal{
     display:block;
     width:50%;
@@ -151,7 +149,26 @@ html {
 .btn-scrolltop-on {
     transform: translateY(0);
 }
-
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+.header h2 {
+    text-align: center;
+}
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+.progress-bar {
+    height: 8px;
+    background: #F5011A;
+    width: 0%;
+}
 /*Whatsapp
 .whatsapp{
   float: right;
